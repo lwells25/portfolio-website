@@ -1,0 +1,70 @@
+.footer-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 90px;
+  background-color: #000000;
+  border-top: 4px solid var(--brand1);
+  bottom: 0px;
+  position: relative;
+}
+
+.footer-left-container {
+  background-color: inherit;
+  color: var(--brand2);
+  
+  flex: 1;
+  font-size: 14px;
+  display: flex;
+  padding-left: 25px;
+}
+
+.footer-middle-container {
+  background-color: inherit;
+  color: white;
+  flex: 1;
+  display: flex;
+  padding-left: 25px;
+}
+
+.footer-right-container {
+  display: flex;
+  height: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 25px;
+  flex: 1;
+  color: white;
+  font-size: 18px;
+  background-color: inherit;
+  max-width: 300px;
+}
+
+.footer-right-container div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: inherit;
+  padding: 0px 10px 0px 10px;
+}
+
+.footer-right-container img {
+  background-color: inherit;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.footer-right-container img:hover {
+opacity: .8;
+}
+
+/* This is a CSS comment */
+/*Brand Colors
+Black: 000000
+Gray: 2C2C2C
+White: FFFFFF
+Sage: 708d81
+Active Gold: #F0A202
+Gold: D2B567
+*/

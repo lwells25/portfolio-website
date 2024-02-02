@@ -1,0 +1,70 @@
+.header-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 90px;
+  background-color: #181818;
+  border-bottom: 2px solid var(--brand1);;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.header-left-container {
+  background-color: inherit;
+  flex: 1;
+  height: 90px;
+  display: flex;
+  padding-left: 25px;
+}
+
+.header-logo {
+  background-color: inherit;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.header-right-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  justify-content: space-between;
+  padding-right: 25px;
+  flex: 1;
+  color: white;
+  font-size: 18px;
+  background-color: inherit;
+  max-width: 500px;
+}
+
+.header-right-container div {
+  color: white;
+  background-color: inherit;
+  padding: 0px 10px 0px 10px;
+  cursor: pointer;
+}
+
+.nav-portfolio:hover,
+.nav-process:hover,
+.nav-shop:hover,
+.nav-contact:hover,
+.nav-blog:hover {
+  color: var(--brand1);
+}
+
+.nav-portfolio:active,
+.nav-process:active,
+.nav-shop:active,
+.nav-contact:active,
+.nav-blog:active {
+  color: var(--brand2);; /*potentially switch this to the active gold #F0A202*/
+}
+
+/* This is a CSS comment */
+/*Brand Colors
+Black: 000000
+Gray: 2C2C2C
+White: FFFFFF
+Sage: 708d81
+Active Gold: #F0A202
+Gold: D2B567
+*/
