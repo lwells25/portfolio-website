@@ -11,7 +11,7 @@ height: 75vh;
   display: flex;
   flex: 1;
   flex-direction: column;
-  color: white;
+  color: var(--brand4);
   height: 100%;
 }
 
@@ -47,30 +47,73 @@ gap: .5rem;
   flex: 1;
 }
 
-.left-column {
-  flex: 1;
-margin-right: 50px;
-height: 100%;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
+.left-column  { 
+  display: grid;
+  grid-template-rows: 300px 40px 1fr 100%;
+  row-gap: 25px;
+  height: auto;
+
 }
 
 .row-b1 {
-  display: flex;
-  justify-content: center;
-}
+    display: flex;
+    justify-content: center;
+  }
 
 .profile-picture-container {
-  height: 300px;
+  position: relative;
+  justify-self: center;
+  background-color: var(--brand5);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .8);
   width: 300px;
+  border-radius: 100%;
+  overflow: hidden;
 }
 
 .profile-picture {
-  border-radius: 100%;
-  height: 100%;
   width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  transition: opacity 0.3s ease;
+  justify-self: center;
+}
 
+.profile-picture-hover {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  transition: opacity 0.3s ease, transform 0.5s ease-in-out;
+  transform: translateY(100%);
+}
+
+.profile-picture-container:hover .profile-picture {
+  opacity: 0;
+}
+
+.profile-picture-container:hover .profile-picture-hover {
+  opacity: 1;
+  transition-delay: 0.2s;
+  transform: translateY(0);
+}
+
+
+.name {
+  justify-self: center;
+}
+
+.bio {
+  text-align: justify;
+}
+
+.mantra-bio {
+  color: var(--brand2);
+  font-style: italic;
+  font-size: var(--fs-body);
+  margin-left: 25px;
 }
 
 .bio-button-container {
@@ -81,18 +124,12 @@ justify-content: space-between;
 }
 
 button {
-  background-color: transparent;
   position: relative;
-  border-style: solid;
-  border-radius: 10px;
-  border-width: 1px;
   border-color: var(--brand1);
   padding: 10px 25px;
   margin: 0px 5px 5px 0px;
   color: var(--brand1);
-  font-size: 20px;
-  font-weight: 300;
-  cursor: pointer;
+  background-color: transparent;
   overflow: hidden;
   background-image: linear-gradient(to right, transparent 50%, var(--brand1) 50%);
   background-size: 200% 100%;
@@ -101,8 +138,8 @@ button {
 
 button:hover {
   background-position: -100% 0;
-  color: black;
-  font-weight: 400;
+  color: var(--brand5);
+  font-weight: var(--fs-body);
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.6);
 }
 

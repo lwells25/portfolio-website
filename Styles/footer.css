@@ -3,7 +3,7 @@
   flex-direction: row;
   align-items: center;
   height: 90px;
-  background-color: #000000;
+  background-color: var(--ftr-clr);
   border-top: 4px solid var(--brand1);
   bottom: 0px;
   position: relative;
@@ -14,14 +14,14 @@
   color: var(--brand2);
   
   flex: 1;
-  font-size: 14px;
+  font-size: var(--fs-ftr);
   display: flex;
   padding-left: 25px;
 }
 
 .footer-middle-container {
   background-color: inherit;
-  color: white;
+  color: var(--brand4);
   flex: 1;
   display: flex;
   padding-left: 25px;
@@ -35,8 +35,7 @@
   align-items: center;
   padding-right: 25px;
   flex: 1;
-  color: white;
-  font-size: 18px;
+  color: var(--brand4);
   background-color: inherit;
   max-width: 300px;
 }
